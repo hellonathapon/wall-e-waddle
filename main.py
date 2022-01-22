@@ -1,4 +1,5 @@
 import re
+import sys
 
 def walking(str):
     x = 0
@@ -40,4 +41,4 @@ def walking(str):
                 facing_dir -= 1
     return 'X: {} Y: {} Direction: {}'.format(x,y,directions[facing_dir])
 
-print(walking("W5RW7RRW12LW2"))
+print(walking(sys.argv[1]))
